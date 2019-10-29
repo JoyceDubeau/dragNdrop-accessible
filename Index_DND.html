@@ -1,0 +1,202 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <title>Drag and Drop Single</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="dragdrop.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <link href="theme.css" rel="stylesheet" type="text/css">
+    <link href="basic.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h1>Drag and Drop Single</h1>
+    <p>
+        Drag and drop to match the scenario items with the descriptions they belong. See <a href="#kbdinstructions">keyboard instructions</a>.
+    </p>
+
+    <section class="container-fluid">
+        <div class="dnd-wrapper">
+			<div id="dragdrop" class="col-lg-12 col-md-12 col-sm-12">
+				<div>
+					<!-- column left -->
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<h3>Scenarios</h3>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul class="sta" id="dragzone1">
+									<li class="draggable" id="drag1" data-answer="dropzone5" aria-labelledby="drag1def">A</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drag1def">ScenarioA</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul class="sta" id="dragzone2">
+									<li class="draggable" id="drag2" data-answer="dropzone4" aria-labelledby="drag2def">B</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drag2def">ScenarioB</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul class="sta" id="dragzone3">
+									<li class="draggable" id="drag3" data-answer="dropzone3" aria-labelledby="drag3def">C</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drag3def">ScenarioC</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul class="sta" id="dragzone4">
+									<li class="draggable" id="drag4" data-answer="dropzone2" aria-labelledby="drag4def">D</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drag4def">ScenarioD</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul class="sta" id="dragzone5">
+									<li class="draggable" id="drag5" data-answer="dropzone1" aria-labelledby="drag5def">E</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drag5def">ScenarioE</div>
+						</div>
+					</div>
+					<!-- ends column left -->
+					
+					<!-- column right -->
+					<div class="col-lg-6 col-md-6 col-sm-6" id="descriptions">
+						<h3>Descriptions</h3>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul id="dropzone1" data-answered="false" name="dropzone">
+									<li class="empty" id="drop1" aria-labelledby="drop1def">&nbsp;</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drop1def">
+								<ul>
+									<li>Put Scenario E here</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul id="dropzone2" data-answered="false" name="dropzone">
+									<li class="empty" id="drop2" aria-labelledby="drop2def">&nbsp;</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drop2def">
+								<ul>
+									<li>Put Scenario D here</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul id="dropzone3" data-answered="false" name="dropzone">
+									<li class="empty" id="drop3" aria-labelledby="drop3def">&nbsp;</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drop3def">
+								<ul>
+									<li>Put Scenario C here</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul id="dropzone4" data-answered="false" name="dropzone">
+									<li class="empty" id="drop4" aria-labelledby="drop4def">&nbsp;</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drop4def">
+								<ul>
+									<li>Put Scenario B here</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-2 col-md-2 col-sm-2">
+								<ul id="dropzone5" data-answered="false" name="dropzone">
+									<li class="empty" id="drop5" aria-labelledby="drop5def">&nbsp;</li>
+								</ul>
+							</div>
+							
+							<div class="col-lg-10 col-md-10 col-sm-10" id="drop5def">
+								<ul>
+									<li>Put Scenario A here</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- ends column right -->
+				</div>
+			</div>
+        </div>
+		
+		<section id="feedback-container">
+			<div id="feedback">
+				<h2>Match it activity completed!</h2>
+				<p>Congratulations! You've correctly matched the activity to the responsible job function.</p>
+				<p class="instructional">Click the arrow button to move to the next page.</p>
+			</div>
+		</section>
+
+    </section>
+
+    <section>
+        <h2 id="kbdinstructions">Keyboard Instructions</h2>
+        <ul class="instructions">
+            <li>Use the <kbd>Tab</kbd> to move to the answer you want to move.</li>
+            <li>Select the item you want to move with the <kbd>Spacebar</kbd>.</li>
+            <li>Use the <kbd>Up</kbd> and <kbd>Down</kbd> cursor keys to select a target in the context menu.</li>
+            <li>Press <kbd>Enter</kbd> to move the selected choice to the target list.</li>
+        </ul>
+    </section>
+	
+	<style>
+		#feedback-container {
+			width: 50%;
+			position: fixed;
+			top: 20%;
+			left: 25%;
+			z-index: 2;
+			display: none;
+		}
+		#feedback {
+			padding: 20px;
+			border: 2px solid #9f7419;;
+			background-color: #f4eedd;
+		}
+		.instructional {
+			color: #006600;
+			font-weight: bold;
+		}
+	</style>
+	
+</body>
+
+</html>
